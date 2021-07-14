@@ -1,0 +1,302 @@
+/* Basic css */
+*{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.orng{
+    color: #ffa500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*header part css*/
+#main-header{
+    background: #210191;
+    height: 500px;
+    padding-top: 42px ;
+    padding-left: 124px;
+    padding-right: 156;
+}
+.navbar{
+    
+}
+.navbar nav ul{
+    display: flex;
+}
+.navbar nav ul li{
+    list-style: none;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+}
+.navbar , .login{
+    
+    
+    display: flex;
+    justify-content: space-around;
+}
+.login a{
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+.btn{
+    padding: 7px 15px;
+    background: #E02C6D;
+
+}
+/*header banner*/
+.header-banner{
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-banner h1{
+    font-size: 64px;
+}
+.banner-text{
+    width: 485px;
+    height: auto;
+}
+.wtch {
+    text-decoration: none;
+    color:#ffffff;
+    
+    
+}
+.ban-img {
+    width: 556.01px;
+    height: 438px ;
+    
+
+}
+.ban-img img{
+    max-width: 95%;
+}
+/*------banner end*/
+
+/*.player part css start*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album{
+  margin-top: 27px;
+  margin-bottom: 150px;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.player{
+    width: 300px;
+    height: 380px;
+    border: 1px solid #f0ecec;
+    box-shadow: 1px 1px 1px #fff;
+    
+}
+.player-img{
+    width: 300px;
+    height: 256px;
+}
+.player-img img{
+    width: 100%;
+}
+
+
+/*highlight part start css*/
+.highlight-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+.highlight-text{
+    width: 469px;
+    height: 309px;
+    text-align: justify;
+    margin-right: 66px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    font-weight: 700;
+   
+}
+.highlight-img{
+    width: 567px;
+    height: 427px;
+
+}
+.highlight-img img{
+    width: 80%;
+}
+.mt{
+    margin-top: 24px;
+}
+
+/*-----------
+------footer part css----*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.footer-part{
+    width: 483.87px;
+    height: 213px;
+   
+    
+    
+
+}
+.footer-img{
+    width: 483.87px;
+    height: 110px;
+}
+.footer-img img{
+    width: 90%;
+}
+.footer-icon{
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 51px;
+    color: #aaaaaa;
+    
+}
+.fab {
+    padding-right: 14px;
+}
+.footer-text{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 63px;
+}
+/*------hover effects and animation part-----*/
+.btn:hover {
+ 
+    transform: scale(1.2);
+    transition: 1s ease-in;
+}
+ .bt:hover{
+    transform: scaleY(1.5);
+    transition: 1s ;
+    color: #000000;
+
+}
+.player-img img:hover{
+    transform: scale(1.1);
+}
+/*animation start*/
+.ban-img{
+    position: relative;
+    animation: ftbl 3s linear 0.2s infinite reverse forwards;
+}
+@keyframes ftbl {
+    0%{
+        top: 0;
+        left: 95px;
+        opacity: 0.9%;
+
+    }
+    100%{
+        top: 0;
+        right: 80px;
+        
+
+    }
+    
+}
+
+.highlight-img img:hover{
+    transform: translate(30px, 20%);
+    border-radius: 20px;
+}
+
+.footer-img{
+    position: relative;
+    animation-name: fimg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+@keyframes fimg{
+   0%{
+       top: 0;
+       left: 10px;
+   }
+   100%{
+       top: 0;
+       right: 10px;
+   }
+}
+
+
+
+
+
+/*media query try*/
+@media screen and (max-width:688px){
+    .header-banner{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .album{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-part{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*Note: just because this media query I have to submit after 1 day late, and thats the only thing demotevated me to do code, I was in mental pressure , I do my best , please consider ,, we are newbie,*/ 
+
+
+
+
+
+
+
+
+
